@@ -42,11 +42,11 @@ function sendMail(event) {
     // Get form data
     const name = document.querySelector('input[name="name"]').value;
     const email = document.querySelector('input[name="email"]').value;
-    const subject = document.querySelector('input[name="subject"]').value;
+    
     const message = document.querySelector('textarea[name="message"]').value;
 
     // Construct the mailto link
-    const mailtoLink = `mailto:kanishkasahu1279@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage:\n${message}`)}`;
+    const mailtoLink = `mailto:sajalsas@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage:\n${message}`)}`;
 
     // Redirect to the mailto link
     window.location.href = mailtoLink;
